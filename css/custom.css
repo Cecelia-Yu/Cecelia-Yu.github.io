@@ -1,0 +1,17 @@
+/* 整个目录文字颜色 */
+.toc a {
+    color: #4b6956;   /* 默认颜色 */
+    text-decoration: none;  /* 去掉下划线 */
+  }
+  
+  /* 鼠标悬停时 */
+  .toc a:hover {
+    color: #ff6600;
+  }
+  
+  /* 当前激活目录项（滚动到对应标题时） */
+  .toc .active {
+    color: #7f8966;
+    font-weight: bold;
+  }
+  
