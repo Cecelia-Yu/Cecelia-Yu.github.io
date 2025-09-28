@@ -19,16 +19,18 @@
   <meta name="author" content="Wanyang Yu">
   <meta name="keywords" content="">
   
-    <meta name="description" content="How I built this website :)">
+    <meta name="description" content="How I built this website">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hello World">
 <meta property="og:url" content="http://cecelia-yu.github.io/2025/09/25/hello-world/index.html">
 <meta property="og:site_name" content="YwY&#39;s">
-<meta property="og:description" content="How I built this website :)">
+<meta property="og:description" content="How I built this website">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-09-25T02:11:51.686Z">
-<meta property="article:modified_time" content="2025-09-25T09:41:54.586Z">
+<meta property="article:modified_time" content="2025-09-28T10:20:29.044Z">
 <meta property="article:author" content="Wanyang Yu">
+<meta property="article:tag" content="ENG">
+<meta property="article:tag" content="Web Design">
 <meta name="twitter:card" content="summary_large_image">
   
   
@@ -71,7 +73,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"cecelia-yu.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":1},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"cecelia-yu.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":50,"cursorChar":"✨","loop":false,"scope":["home"]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":"#"},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":1},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":false,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -199,7 +201,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Hello World"></span>
+            <span id="subtitle">Hello World</span>
           
         </div>
 
@@ -222,7 +224,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          58 字
+          192 字
         
       </span>
     
@@ -233,7 +235,7 @@
         
         
         
-          1 分钟
+          2 分钟
         
       </span>
     
@@ -275,27 +277,29 @@
             
               <div class="markdown-body">
                 
-                <p>This blog tells the story about this personal website itself. Hope it would be helpful for you to create your own wiki 🙌 </p>
-<h2 id="Log"><a href="#Log" class="headerlink" title="Log"></a>Log</h2><p>2025/9/25 build this website using <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> +  <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a></p>
-<h2 id="Tutorial"><a href="#Tutorial" class="headerlink" title="Tutorial"></a>Tutorial</h2><p>This also serves as a memo for me.</p>
-<h3 id="Requirments"><a href="#Requirments" class="headerlink" title="Requirments"></a>Requirments</h3><p><strong>Linux</strong> is recommanded since it saves a lot of clicking around. If you haven’t used it before, don’t worry. Start off by trying <strong>WSL2 &amp; Ubuntu</strong> for Windows users. You’ll need to search related tutorials for yourself.</p>
-<p>I refered to this blog <a target="_blank" rel="noopener" href="http://karlzz.icu/2025/07/28/Hexo%20%E5%BB%BA%E7%AB%99%E6%95%99%E7%A8%8B/index.html">Hexo建站教程</a> to set up my environment. </p>
-<p>It’s a well-organized tutorial but I still meet some trouble when executing <code>hexo init</code> – The git-clone process failed with time-out connection. So it’s <strong>strongly recommended</strong> to replace <code>hexo init</code> with</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ git <span class="hljs-built_in">clone</span> https://gitee.com/hexojs/hexo-starter.git Hexo-Blog<br>$ <span class="hljs-built_in">cd</span> Hexo-Blog<br>$ npm install<br></code></pre></td></tr></table></figure>
-
-
-<h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure>
-<p>This will produce a local site, usually at <code>localhost:4000</code>.</p>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo clean<br>$ hexo generate<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure>
-<p>After deployment, it often takes several minutes to see the changes.</p>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+                <p>This blog tells the story about this personal website itself. Hope it would be helpful for you to create your own wiki 🙌</p>
+<h2 id="Log">Log</h2>
+<div class="note note-info">
+            <p>2025</p><p>25/9<br>build this website using <a target="_blank" rel="noopener" href="https://hexo.io"> <strong>Hexo</strong></a> +  <a target="_blank" rel="noopener" href="https://github.com/fluid-dev/hexo-theme-fluid"><strong>Fluid</strong></a></p><p>28/9<br>trouble with footnote， set up a new repository for code management</p>
+          </div>
+<h2 id="Design">Design</h2>
+<p>Two banner images</p>
+<h2 id="Tutorial">Tutorial</h2>
+<p>This also serves as a memo for myself.</p>
+<h3 id="Operating-System-Linux">Operating System: Linux</h3>
+<p><strong>Linux</strong> is recommanded since it saves a lot of clicking around. If you haven’t used it before, don’t worry. Start off by trying <a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/windows/wsl/install"> <strong>WSL2 &amp; Ubuntu</strong> </a> for Windows users. Tutorials are easily accessible on Internet.</p>
+<h3 id="Requirments">Requirments</h3>
+<p>I refered to this blog <a target="_blank" rel="noopener" href="http://karlzz.icu/2025/07/28/Hexo%20%E5%BB%BA%E7%AB%99%E6%95%99%E7%A8%8B/index.html">Hexo建站教程</a> to set up my environment. The main process is summed up below:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 1. dowload Node.js from https://nodejs.org/en</span><br><span class="hljs-comment"># 2. then check the verison</span><br>node -v<br>npm -v<br><span class="hljs-comment"># 3. download git </span><br>add-apt-repository ppa:git-core/ppa<br><span class="hljs-built_in">sudo</span> apt update<br><span class="hljs-built_in">sudo</span> apt install git<br>git --version<br><span class="hljs-comment"># 4. git config</span><br>git config --global user.name <span class="hljs-string">&quot;GitHub Username&quot;</span><br>git config --global user.email <span class="hljs-string">&quot;Github email&quot;</span><br><span class="hljs-comment"># 5. set up a new repository in Github named: &lt;Username&gt;.github.io</span><br><span class="hljs-comment"># 6. generate SSH key</span><br>ssh-keygen -t rsa -C <span class="hljs-string">&quot;Github email&quot;</span><br><span class="hljs-comment"># 7. open the file that stores the generated SSH key and COPY ALL THE CONTENTS (Ctrl+A, Ctrl+C)</span><br>~/.ssh/id_rsa.pub<br><span class="hljs-comment"># 8. paste to Github Settings &gt; SSH and GPG keys &gt; New SSH key and save</span><br><span class="hljs-comment"># 9. validate SSH connection</span><br>ssh -T git@github.com<br>    <span class="hljs-comment"># Succeed if you see </span><br>    <span class="hljs-comment"># Hi username! You&#x27;ve successfully authenticated</span><br><span class="hljs-comment"># 10. download HEXO</span><br>npm install -g hexo-cli<br><span class="hljs-built_in">mkdir</span> Hexo-Blog<br><span class="hljs-built_in">cd</span> Hexo-Blog<br>hexo init<br>npm install<br>    <span class="hljs-comment"># Succeed if you see</span><br>    <span class="hljs-comment"># .</span><br>    <span class="hljs-comment">#├── _config.yml         # 站点配置文件</span><br>    <span class="hljs-comment">#├── package.json        # 依赖信息</span><br>    <span class="hljs-comment">#├── scaffolds           # 模板文件夹</span><br>    <span class="hljs-comment">#├── source              # 文章和资源文件夹</span><br>    <span class="hljs-comment">#│   ├── _drafts         # 草稿文件夹</span><br>    <span class="hljs-comment">#│   └── _posts          # 文章文件夹</span><br>    <span class="hljs-comment">#├── themes              # 主题文件夹</span><br>    <span class="hljs-comment">#└── public             # 生成的静态文件</span><br><br></code></pre></td></tr></table></figure>
+<div class="note note-warning">
+            <p>If your meet some trouble when executing <code>hexo init</code> – The git-clone process fails with time-out connection. Try to replace <code>hexo init</code> with</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">git <span class="hljs-built_in">clone</span> https://gitee.com/hexojs/hexo-starter.git Hexo-Blog<br><span class="hljs-built_in">cd</span> Hexo-Blog<br>npm install<br></code></pre></td></tr></table></figure>
+          </div>
+<h3 id="Commands">Commands</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo new <span class="hljs-string">&quot;My New Post&quot;</span> <span class="hljs-comment">#name of the new post</span><br><br>hexo server <span class="hljs-comment"># then you can access a local site, usually at &#x27;localhost:4000&#x27;</span><br><br>hexo clean <br>hexo generate<br>hexo deploy <span class="hljs-comment"># then view your web on XXX.github.io</span><br><br></code></pre></td></tr></table></figure>
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs">Hexo’s Documentation</a></p>
+<div class="note note-warning">
+            <p>If any of those commands don’t work, make sure you’re currently working at the Hexo-Blog repository. You can check this by</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">pwd</span><br><span class="hljs-built_in">ls</span> -a <br></code></pre></td></tr></table></figure>
+          </div>
 
                 
               </div>
@@ -304,6 +308,36 @@
             <div>
               <div class="post-metas my-3">
   
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Tech-Notes/" class="category-chain-item">Tech Notes</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/ENG/" class="print-no-link">#ENG</a>
+      
+        <a href="/tags/Web-Design/" class="print-no-link">#Web Design</a>
+      
+    </div>
   
 </div>
 
@@ -494,21 +528,6 @@
 <script  src="/js/events.js" ></script>
 <script  src="/js/plugins.js" ></script>
 
-
-  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
-  <script>
-    (function (window, document) {
-      var typing = Fluid.plugins.typing;
-      var subtitle = document.getElementById('subtitle');
-      if (!subtitle || !typing) {
-        return;
-      }
-      var text = subtitle.getAttribute('data-typed-text');
-      
-        typing(text);
-      
-    })(window, document);
-  </script>
 
 
 
