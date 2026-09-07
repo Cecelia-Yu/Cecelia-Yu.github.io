@@ -9,7 +9,7 @@ body {
   gap: 26px;
   background: white;
   color: black;
-  font: 28px/1.28 "Calibri Light", Calibri, "Segoe UI", sans-serif;
+  font: 21px/1.28 "Calibri Light", Calibri, "Segoe UI", sans-serif;
 }
 p, h1, h2 { margin: 0; }
 main, main section, .degree > * { min-width: 0; overflow-wrap: anywhere; }
@@ -25,32 +25,30 @@ h1 { width: 250px; margin-left: 26px; padding-bottom: 10px; border-bottom: 2px s
 h1 span { font-family: STKaiti, KaiTi, serif; font-weight: 400; }
 .name { width: 250px; margin-left: 26px; padding: 9px 0; text-align: center; border-bottom: 2px solid; font-weight: 700; }
 small { font-size: .85em; }
-.current { margin-top: 27px; border: 2px solid; padding: 5px 10px; font-size: 26px; line-height: 1.23; }
-.contact { margin: 40px 0 0 4px; font-size: 23px; line-height: 1.23; }
+.current { margin-top: 27px; border: 2px solid; padding: 5px 10px; font-size: 19.5px; line-height: 1.23; }
+.contact { margin: 40px 0 0 4px; font-size: 17.25px; line-height: 1.23; }
 
 /* Main content. */
 main { padding-top: 17px; min-width: 0; }
 .hello, .intro { padding-left: 5px; }
-.intro { font-size: 26px; }
+.intro { font-size: 19.5px; }
 .motivation { margin-top: 16px; border: 2px solid; padding: 5px 11px 7px; }
-.definition { font-size: 23px; line-height: 1.22; }
-ul { list-style: none; margin: 0; padding-left: 60px; font-size: 26px; line-height: 1.23; }
+.definition { font-size: 17.25px; line-height: 1.22; }
+ul { list-style: none; margin: 0; padding-left: 60px; font-size: 19.5px; line-height: 1.23; }
 li::before { content: "* "; }
-.outside { margin: 33px 5px 15px; font-size: 26px; line-height: 1.23; }
+.outside { margin: 33px 5px 15px; font-size: 19.5px; line-height: 1.23; }
 .education, .research { border-top: 2px solid; padding: 20px 5px 0; }
 .degree { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); gap: 20px; }
 .education { padding-bottom: 25px; }
 .research { padding-top: 12px; }
-footer { margin-top: 42px; font-size: 20px; }
+footer { margin-top: 42px; font-size: 15px; }
 
 /* Preserve proportions on smaller desktop screens; allow text to flow. */
 @media (min-width: 901px) and (max-width: 1450px) {
-  body { padding: 36px; grid-template-columns: 280px minmax(0, 1fr); gap: 24px; font-size: 23px; }
+  body { padding: 36px; grid-template-columns: 280px minmax(0, 1fr); gap: 24px; }
   aside { padding: 40px 28px 0 0; }
   .portrait { margin-left: 23px; }
   h1, .name { width: 240px; margin-left: 0; }
-  .current, .intro, .outside, ul { font-size: 21px; }
-  .contact, .definition { font-size: 19px; }
   .degree { grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); }
 }
 @media (max-width: 900px) {
@@ -82,7 +80,20 @@ summary:focus-visible { outline: 2px solid #0070c0; outline-offset: 4px; }
 
 /* Desktop: each column scrolls independently within the viewport. */
 @media (min-width: 901px) {
-  body { height: 100dvh; overflow: hidden; }
+  body {
+    --right-gutter: max(44px, calc((100vw - 1600px) / 2 + 44px));
+    height: 100dvh;
+    overflow: hidden;
+  }
+  /* Extend the scroll surface to the window edge, keeping the content inset. */
+  main {
+    margin-right: calc(-1 * var(--right-gutter));
+    padding-right: var(--right-gutter);
+  }
   aside, main { min-height: 0; overflow-y: auto; overscroll-behavior-y: contain; }
   aside { scrollbar-width: thin; }
+}
+
+@media (min-width: 901px) and (max-width: 1450px) {
+  body { --right-gutter: 36px; }
 }
