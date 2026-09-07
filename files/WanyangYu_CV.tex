@@ -1,0 +1,86 @@
+% Edit the content below, then run build-cv.ps1 from the repository root.
+\documentclass[10pt,a4paper]{article}
+\usepackage[margin=18mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[colorlinks=true,urlcolor=blue]{hyperref}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{3pt}
+\titleformat{\section}{\large\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{12pt}{6pt}
+\setlist[itemize]{leftmargin=12pt,nosep,topsep=3pt}
+\pagestyle{plain}
+% A date column and a text column; entries stay together across page breaks.
+\newcommand{\entry}[2]{\noindent\begin{minipage}[t]{.19\linewidth}\small #1\end{minipage}\hfill\begin{minipage}[t]{.79\linewidth}#2\end{minipage}\par\vspace{7pt}}
+\begin{document}
+{\LARGE\bfseries WanyangYu}\par
+\href{mailto:yuwy_23@mail.ustc.edu.cn}{yuwy\_23@mail.ustc.edu.cn}\quad | \quad
+\href{https://github.com/Cecelia-Yu}{github.com/Cecelia-Yu}
+\section*{Education}
+
+\entry{2023.09--2027.06}{\textbf{University of Science and Technology of China}\\
+Expected graduation: June 2027\\
+B.E. in Computer Science and Technology · Hua Xia Talent Program · Hefei, China\\
+GPA: 3.86/4.3 · Weighted average: 89.76/100 · Rank: 23/236\\
+Transferred from the Division of Life Sciences and Medicine (2023) to the School of Computer Science (2024).}
+
+\section*{Research Experience}
+\entry{2026.07--Present}{\textbf{Exploring the Task Space of Embodied Assistance}\\
+Human Computer Integration Lab · University of Chicago\\
+Advisor: Prof. Pedro Lopes
+\begin{itemize}
+\item Developing visual closed-loop control for parallel electrical muscle stimulation.
+\item Conducting behavioral and user studies with blind and low-vision participants.
+\end{itemize}}
+\entry{2025.10--2026.02}{\textbf{Longitudinal Brain MRI Prediction via Diffeomorphic Deep Learning}\\
+National Engineering Lab for Brain-inspired Intelligence Technology\\
+Advisor: Prof. Aiping Liu
+\begin{itemize}
+\item Designed DRIFT, a two-stage framework for predicting follow-up brain MRIs from baseline scans using a conditional 3D U-Net to generate diffeomorphic velocity fields.
+\item Achieved a 78--83\% MSE reduction over state-of-the-art methods on 3,926 UK Biobank longitudinal pairs, with interpretable Jacobian maps and velocity fields localizing regional atrophy.
+\item Independently led problem formulation, model design, all experiments, and manuscript writing.
+\end{itemize}}
+\entry{2025.06--2026.01}{\textbf{mmWave Radar-Based Passive Sensing and Communication System}\\
+Lab for Intelligent Networking and Knowledge Engineering\\
+Advisor: Prof. Yubo Yan
+\begin{itemize}
+\item Conducted electromagnetic simulations and parameter optimization for radar sensing; designed and validated hardware prototypes.
+\end{itemize}}
+\entry{2025.03--2025.06}{\textbf{LLM-Empowered Memory Management Optimization Framework}\\
+Operating Systems (H) · Course project\\
+Advisor: Prof. Kai Xing
+\quad\href{https://github.com/OSH-2025/MEMO}{GitHub}
+\begin{itemize}
+\item Led a five-person team to build a predictive framework using locally deployed Llama 3-8B-Instruct to anticipate user behavior for system-level memory pre-allocation, achieving approximately 70\% accuracy on web tasks.
+\end{itemize}}
+\entry{2024.01--2024.10}{\textbf{VEGFR-like Surface Display on \textit{E. coli} for Tumor Inhibition}\\
+iGEM · Presented at the Grand Jamboree, Paris\\
+Advisor: Prof. Jiong Hong
+\begin{itemize}
+\item Contributed to experimental design and data analysis; led scientific communication and the team presentation.
+\end{itemize}}
+\newpage\section*{Selected Coursework}
+Brain--Computer Interface: 95\par
+Operating Systems (H): 95\par
+Stochastic Processes B: 92\par
+Probability \& Mathematical Statistics: 91\par
+Compiler Principles (H): 86\par
+Collegiate Psychology: A+\par
+\section*{Technical Skills}
+\textbf{Programming \& tools:} Python, C/C++, Verilog HDL, MATLAB, Codex\par
+\textbf{Machine learning:} PyTorch, MindSpore; 3D medical image analysis and generative models\par
+\textbf{Neuroscience:} Familiar with EEG/fMRI experimental paradigms and analysis methodology\par
+\textbf{Hardware:} KiCad, Ansys HFSS, Advanced Design System\par
+\section*{Honors and Awards}
+\entry{2026}{Computer Science Summer Research Program Fellowship}
+\entry{2025}{USTC Excellent Student Scholarship}
+\entry{2024}{USTC Rose Scholarship (top 1\%)}
+\entry{2024}{Scholarship for Hua Xia Talent Program in CS\&T --- Class A}
+\entry{2023}{USTC Alumni Foundation High School Scholarship Award}
+\section*{Leadership and Activities}
+\entry{2025 -- 2026}{President, USTC Literary Society}
+\entry{2025}{Outstanding Team \& Individual, Winter Break Social Practice}
+\entry{2024}{Excellent Mental Health Advocate}
+\end{document}
